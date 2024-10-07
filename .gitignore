@@ -1,0 +1,8 @@
+cache
+hms
+log
+plugins
+printers
+system
+*.cereal
+BambuNetworkEngine.conf

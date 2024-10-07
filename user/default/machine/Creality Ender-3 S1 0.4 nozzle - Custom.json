@@ -1,0 +1,38 @@
+{
+    "before_layer_change_gcode": ";BEFORE_LAYER_CHANGE\n;[layer_z]\nBEFORE_LAYER_CHANGE HEIGHT=[layer_z] LAYER=[layer_num]\nG92 E0\n;{layer_z}\n;LAYER:[layer_num]\n\n",
+    "from": "User",
+    "gcode_flavor": "klipper",
+    "inherits": "Creality Ender-3 S1 0.4 nozzle",
+    "is_custom_defined": "0",
+    "layer_change_gcode": ";AFTER_LAYER_CHANGE\n;[layer_z]\nAFTER_LAYER_CHANGE\nSET_PRINT_STATS_INFO CURRENT_LAYER={layer_num + 1}",
+    "machine_end_gcode": "PRINT_END\n; total layers count = [total_layer_count]",
+    "machine_max_acceleration_x": [
+        "1000",
+        "500"
+    ],
+    "machine_max_acceleration_y": [
+        "1000",
+        "500"
+    ],
+    "machine_max_speed_x": [
+        "1000",
+        "500"
+    ],
+    "machine_max_speed_y": [
+        "1000",
+        "500"
+    ],
+    "machine_max_speed_z": [
+        "20",
+        "10"
+    ],
+    "machine_start_gcode": "M190 S0 ; Remove this if autoemit_temperature_commands is off in Prusa Slicer 2.6 and later\nM109 S0 ; Remove this if autoemit_temperature_commands is off in Prusa Slicer 2.6 and later\n_PRINT_START_PHASE_INIT EXTRUDER={first_layer_temperature[initial_tool]} BED=[first_layer_bed_temperature] MESH_MIN={first_layer_print_min[0]},{first_layer_print_min[1]} MESH_MAX={first_layer_print_max[0]},{first_layer_print_max[1]} LAYERS={total_layer_count} NOZZLE_SIZE={nozzle_diameter[0]}\n_PRINT_START_PHASE_PREHEAT\n_PRINT_START_PHASE_PROBING\n_PRINT_START_PHASE_EXTRUDER\n_PRINT_START_PHASE_PURGE\n\n; This is the place to put slicer purge lines if you haven't set a non-zero\n; variable_start_purge_length to have START_PRINT automatically calculate and \n; perform the purge (e.g. if using a Mosaic Palette, which requires the slicer\n; to generate the purge).",
+    "name": "Creality Ender-3 S1 0.4 nozzle - Custom",
+    "nozzle_type": "hardened_steel",
+    "print_host": "pi-printer.local",
+    "printer_settings_id": "Creality Ender-3 S1 0.4 nozzle - Custom",
+    "retraction_length": [
+        "1.2"
+    ],
+    "version": "2.1.1.0"
+}

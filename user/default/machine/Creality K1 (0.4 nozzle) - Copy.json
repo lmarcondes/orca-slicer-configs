@@ -1,0 +1,9 @@
+{
+    "from": "User",
+    "inherits": "Creality K1 (0.4 nozzle)",
+    "is_custom_defined": "0",
+    "name": "Creality K1 (0.4 nozzle) - Copy",
+    "print_host": "pi-printer.local",
+    "printer_settings_id": "Creality K1 (0.4 nozzle) - Copy",
+    "version": "1.9.0.2"
+}

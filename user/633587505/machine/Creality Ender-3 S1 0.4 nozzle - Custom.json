@@ -7,11 +7,11 @@
     "layer_change_gcode": ";AFTER_LAYER_CHANGE\n;[layer_z]\nAFTER_LAYER_CHANGE\nSET_PRINT_STATS_INFO CURRENT_LAYER={layer_num + 1}",
     "machine_end_gcode": "PRINT_END\n; total layers count = [total_layer_count]",
     "machine_max_acceleration_x": [
-        "1000",
+        "2500",
         "500"
     ],
     "machine_max_acceleration_y": [
-        "1000",
+        "2500",
         "500"
     ],
     "machine_max_speed_x": [
